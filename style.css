@@ -1,0 +1,43 @@
+header {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 100%;
+    background-repeat: repeat-x;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    color: white;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 100%;
+    background-repeat: repeat-x;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+}
