@@ -36,7 +36,11 @@ nav ul li a {
     text-align: center;
     padding: 20px;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
 
 .footer p {
     margin: 0;

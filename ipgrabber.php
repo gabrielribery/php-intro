@@ -10,7 +10,6 @@
 <?php include 'footer-header/header.php';?>
 
 <?php
-
 $accessKey = 'a7464c45ab142254bd7fa4cc5590fd90'; // Deinen ipstack API-Schlüssel hier eintragen
 
 // IP-Adresse des Besuchers auslesen

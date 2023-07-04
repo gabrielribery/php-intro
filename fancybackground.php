@@ -3,53 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/textstyle.css">
     <title>Document</title>
 </head>
-
 <body>
-<style>
-    html, body {
-        cursor: url('cursor/unicorn.cur'), auto;
-    }
-</style>
-<?php
-session_set_cookie_params(10800); //sek. also wenn nach 30 sek ein refresh gemacht wird geht der benutzer counter hoch
-session_start();
-?>
-
-<?php include 'footer-header/header.php';?>
-<?php echo '<h2>Gratulation. Du bist besucher Nr.:</h2>';
-?>
-<?php
-$counterstand = intval(file_get_contents("counter.txt"));
- 
-if(!isset($_SESSION['counter_ip']))
-   {
-   $counterstand++;
-   file_put_contents("counter.txt", $counterstand);
- 
-   $_SESSION['counter_ip'] = true;
-   }
- 
-echo $counterstand;
-?>
-
-
-<?php
-echo '<h2>Holla</h2>';
-echo "<h3>Heute ist " . date("l") . " der " . date("d/m/Y") . "</h3>";
-echo 'have fun to fill out the form<br/>';
-echo 'crying is allowed but please do it quietly<br/>';
-echo 'tears should not fall on the keyboard<br/>';
-?>
-
-<div class="gif">
-    <img src="rainbow.gif" alt="GIF">
-</div>
-
-<?php include 'footer-header/footer.php'; ?>
+    <style>
+        body{
+    background-color:#1d1d1d;
+  }
+  </style>
 <canvas id="myCanvas" style="position: fixed; top: 0; left: 0; z-index: -1; background-color: pink;"></canvas>
 <script>
     var c = document.getElementById('myCanvas');

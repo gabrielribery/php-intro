@@ -24,3 +24,10 @@ p {
     padding: 10px;
     text-align: center;
 }
+
+.gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

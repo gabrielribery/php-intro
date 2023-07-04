@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/textstyle.css">
+<link rel="stylesheet" href="css/form-css.css">
+
     <title>Formular</title>
     <style>
+        body{margin:0px;} /*margin problem bei header und footer behoben*/
+
         .error {
             color: red;
         }
@@ -11,7 +14,7 @@
 </head>
 <body>
 <?php include 'footer-header/header.php';?>
-    <form method="post" action="bestaetigung.php">
+<form id="myForm" method="post" action="bestaetigung.php">
         <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
