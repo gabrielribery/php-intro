@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    if (navigator.geolocation) {
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000, // Timeout nach 5 Sekunden
+      maximumAge: 0 // Aktuellste Position abrufen
+    };
+  
+    navigator.geolocation.getCurrentPosition(showPosition, handleError, options);
+  } else {
+    console.log("Geolocation wird nicht unterstützt");
+  }
+  
+  function showPosition(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+  }
+  
+  function handleError(error) {
+    console.log("Fehler beim Abrufen der Position: " + error.message);
+  }
+  </script>
+</body>
+</html>

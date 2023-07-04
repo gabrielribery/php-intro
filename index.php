@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/textstyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +12,8 @@ session_set_cookie_params(10800); //sek. also wenn nach 30 sek ein refresh gemac
 session_start();
 ?>
 
-<?php include 'header.php';
-echo '<h2>Gratulation. Du bist besucher Nr.:</h2>';
+<?php include 'footer-header/header.php';?>
+<?php echo '<h2>Gratulation. Du bist besucher Nr.:</h2>';
 ?>
 <?php
 $counterstand = intval(file_get_contents("counter.txt"));
@@ -49,6 +49,6 @@ viewVariable($argumentVariable);
 <?php
 echo 'this';
 ?>
-<?php include 'footer.php'; ?>
+<?php include 'footer-header/footer.php'; ?>
 </body>
 </html>
