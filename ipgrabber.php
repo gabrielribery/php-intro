@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php require 'header.php';?>
+<?php include 'header.php';?>
 
 <?php
 
@@ -43,6 +43,6 @@ if ($data && isset($data['latitude']) && isset($data['longitude']) && isset($dat
 }
 ?>
 
-<?php require 'footer.php';?>
+<?php include 'footer.php';?>
 </body>
 </html>

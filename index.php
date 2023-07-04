@@ -12,7 +12,7 @@ session_set_cookie_params(10800); //sek. also wenn nach 30 sek ein refresh gemac
 session_start();
 ?>
 
-<?php require 'header.php';
+<?php include 'header.php';
 echo '<h2>Gratulation. Du bist besucher Nr.:</h2>';
 ?>
 <?php
@@ -49,6 +49,6 @@ viewVariable($argumentVariable);
 <?php
 echo 'this';
 ?>
-<?php require 'footer.php'; ?>
+<?php include 'footer.php'; ?>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php require 'header.php'; ?>
+<?php include 'header.php'; ?>
 <h2>Fibonacci-folgen abfrage</h2>
 <?php
 function fibonacci($schritte) {
@@ -36,6 +36,6 @@ if (isset($_POST['zahl'])) {
     <input type="submit" value="Berechnen">
 </form>
 
-<?php require 'footer.php'; ?>
+<?php include 'footer.php'; ?>
 </body>
 </html>
