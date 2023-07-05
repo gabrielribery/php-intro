@@ -1,0 +1,29 @@
+#errorContainer {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#myForm .btn-primary {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#myForm .btn-default {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#myForm .btn-primary:hover,
+#myForm .btn-default:hover {
+    opacity: 0.8;
+}
