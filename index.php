@@ -42,7 +42,7 @@ echo '<h2>Holla</h2>';
 echo "<h3>Heute ist " . date("l") . " der " . date("d/m/Y") . "</h3>";
 echo 'have fun to fill out the form<br/>';
 echo 'crying is allowed but please do it quietly<br/>';
-echo 'tears should not fall on the keyboard<br/>';
+echo 'tears should not fall on the keyboard cause its not waterproof<br/>';
 ?>
 
 <div class="gif">

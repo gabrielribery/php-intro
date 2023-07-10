@@ -1,0 +1,8 @@
+Name: 
+Vorname: 
+E-Mail-Adresse: 
+Telefonnummer: 
+Datum: 
+IP-Adresse: 127.0.0.1
+Session-ID: 94gvo0ahk1jv7573pv9b44trlg
+Speicherungsdatum: 2023-07-10 08:04:49

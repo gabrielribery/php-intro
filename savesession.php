@@ -51,6 +51,12 @@ file_put_contents($dateiname, $inhalt);
   
     
     <?php include 'footer-header/footer.php'; 
+        
+   /* if(isset($_SESSION['name'])){
+        echo $_SESSION['name'];
+    } else {
+        echo 'Name fehlt'
+    } */ //echo wenn leer Namefehlt ansonsten Input echo
 
 
 ?>

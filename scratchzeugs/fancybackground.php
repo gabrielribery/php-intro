@@ -11,7 +11,7 @@
     background-color:#1d1d1d;
   }
   </style>
-<canvas id="myCanvas" style="position: fixed; top: 0; left: 0; z-index: -1; background-color: pink;"></canvas>
+<canvas id="myCanvas" style="position: fixed; top: 0; left: 0; z-index: -1; background-color: black;"></canvas>
 <script>
     var c = document.getElementById('myCanvas');
 c.width = window.innerWidth;
@@ -57,7 +57,7 @@ var StarElement = {
       var percent = (1 - this.dist / max_dist);
 
       ctx.beginPath();
-      ctx.strokeStyle = 'hsl(330, 100%, ' + percent * 100 + '%)'; //farbe gold -> ändern zu pink ctx.strokeStyle = 'hsl(, 100%, ' + percent * 100 + '%)';
+      ctx.strokeStyle = 'hsl(45, 100%, ' + percent * 100 + '%)'; //farbe gold -> ändern zu pink ctx.strokeStyle = 'hsl(330, 100%, ' + percent * 100 + '%)'
 
 
       this.width = percent * 3;
@@ -95,7 +95,7 @@ function update() {
 
 function restart() {
 
-  ctx.strokeStyle = 'hsl(50,100%,80%)';
+  ctx.strokeStyle = 'hsl(50,100%,80%)'; //gelbton = 50
   ctx.clearRect(0, 0, c.width, c.height);
   ctx.lineWidth = 2;
   ctx.moveTo(0, 0);
