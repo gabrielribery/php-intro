@@ -51,6 +51,13 @@ file_put_contents($dateiname, $inhalt);
   </style>
 <canvas id="myCanvas" style="position: fixed; top: 0; left: 0; z-index: -1; background-color: black;"></canvas>
 <script>
+  document.body.addEventListener('mousedown', function() {
+    document.body.style.cursor = "url('cursor/falk2.cur'), auto";
+});
+
+document.body.addEventListener('mouseup', function() {
+    document.body.style.cursor = "url('cursor/falk.cur'), auto";
+});
     var c = document.getElementById('myCanvas');
 c.width = window.innerWidth;
 c.height = window.innerHeight;
