@@ -15,6 +15,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div id="errorContainer" class="error"></div>
+                <!--hier die ganzen error meldungen auflisten-->
             </div>
             <div class="col-md-4">
                 <form id="myForm" method="post" action="savesession.php">
@@ -46,7 +47,7 @@
             </div>
             <h1 id="errorContainer">test</h1>
             <div class="col-md-4">
-                <!-- Leerer Platzhalter rechts -->
+                <!-- leerer platzhalter rechts evtl für werbung oder so -->
             </div>
         </div>
     </div>
@@ -82,7 +83,7 @@
             }
 
             var errorContainer = document.getElementById('errorContainer');
-            errorContainer.innerHTML = ''; // Vorherige Fehlermeldungen löschen
+            errorContainer.innerHTML = ''; // vorherige fehlermeldungen löschen
 
             if (errorMessages.length > 0) {
                 var errorList = document.createElement('ul');
@@ -96,7 +97,7 @@
                 errorContainer.appendChild(errorList);
                 errorContainer.style.display = 'block';
 
-                return false; // Formularübermittlung verhindern
+                return false; // formularübermittlung verhindern
             }
             else {
                 errorContainer.style.display = 'none';
@@ -111,7 +112,7 @@
             document.getElementById('datum').value = '';
 
             var errorContainer = document.getElementById('errorContainer');
-            errorContainer.innerHTML = ''; // Fehlermeldungen löschen
+            errorContainer.innerHTML = ''; // fehlermeldungen löschen
             errorContainer.style.display = 'none';
         }
     </script>
