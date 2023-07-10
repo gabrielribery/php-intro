@@ -1,8 +1,0 @@
-Name: awd
-Vorname: awd
-E-Mail-Adresse: asdasd@asdasd.ch
-Telefonnummer: 56156156
-Datum: 2023-07-12
-IP-Adresse: 127.0.0.1
-Session-ID: mqktl59uuma35167u5oote107k
-Speicherungsdatum: 2023-07-10 14:13:27
