@@ -42,6 +42,9 @@ file_put_contents($dateiname, $inhalt);
 </head>
 <body>
 <style>
+  html, body {
+        cursor: url('cursor/falk.cur'), auto;
+    }
         body{
     background-color:#1d1d1d;
   }

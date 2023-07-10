@@ -1,0 +1,8 @@
+Name: asd
+Vorname: asdasd
+E-Mail-Adresse: asdasd@asdasd.ch
+Telefonnummer: 21564865
+Datum: 2023-07-13
+IP-Adresse: 127.0.0.1
+Session-ID: 2bidqijuaj7r90pdeq67okqkdc
+Speicherungsdatum: 2023-07-10 12:01:58
