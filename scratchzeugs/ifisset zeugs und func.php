@@ -1,9 +1,9 @@
 <?php
-session_start(); // session starten >!!!!!!falls noch nicht geschehen!!!!!!!!
+session_start(); // session starten !!!!!!falls noch nicht geschehen!!!!!!!!
 
 // func überprüfen und ausgeben werte
 function printSessionValues() {
-    $fields = ['name', 'vorname', 'email', 'telefon', 'datum'];
+    $fields = ['name', 'vorname', 'email', 'telefon', 'datum']; //wenn in der form mehr input erstellt werden unbedingt id hier nachtragen!!
 
     foreach($fields as $field) {
         if(isset($_SESSION[$field])) {
@@ -28,7 +28,7 @@ $_SESSION['datum'] = $_POST['datum'];
     }else{
         $_SESSION['nummer'] = $_POST['nummer'];
     }
-}*/ //simpler kalkulator-> Aktuelle nummer im cache + neue nummer = neue nummer im cache
+}*/ //simpler kalkulator-> aktuelle nummer im cache + neue nummer = neue nummer im cache
 
 // setzen der zusätzlichen werte die für den user unsichtbar sein müssen da er nicht sehen soll das ich seine ip grabbe
 $_SESSION['ip'] = $_SERVER['REMOTE_ADDR']; // IP-Adresse des Users
@@ -72,8 +72,6 @@ file_put_contents($dateiname, $inhalt);
     <?php include 'footer-header/footer.php'; ?>
    
   
-        
-
 
 </body>
 </html>
