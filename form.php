@@ -10,14 +10,14 @@
     
     <?php include 'footer-header/header.php';?>
     
-
+    <form action="savesession.php" method="post">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div id="errorContainer" class="error"></div>
             </div>
             <div class="col-md-4">
-                <form id="myForm" method="post" action="bestaetigung.php">
+                <form id="myForm" method="post" action="savesession.php">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" id="name" name="name" class="form-control" required>

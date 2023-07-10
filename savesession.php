@@ -1,0 +1,52 @@
+<?php
+session_start(); // Session starten, falls noch nicht geschehen
+
+// Daten aus dem POST-Array erhalten und in Session-Variablen speichern
+$_SESSION['name'] = $_POST['name'];
+$_SESSION['vorname'] = $_POST['vorname'];
+$_SESSION['email'] = $_POST['email'];
+$_SESSION['telefon'] = $_POST['telefon'];
+$_SESSION['datum'] = $_POST['datum'];
+
+// Setzen der fehlenden Werte
+$_SESSION['ip'] = $_SERVER['REMOTE_ADDR']; // IP-Adresse des Clients
+$_SESSION['session_id'] = session_id(); // Eindeutige Session-ID
+$_SESSION['speicherungsdatum'] = date('Y-m-d H:i:s'); // Aktuelles Datum und Uhrzeit
+
+// TXT-Dateiname erstellen
+$dateiname = 'session_data_' . $_SESSION['session_id'] . '.txt';
+
+// Inhalt der TXT-Datei erstellen
+$inhalt = "Name: " . $_SESSION['name'] . "\n";
+$inhalt .= "Vorname: " . $_SESSION['vorname'] . "\n";
+$inhalt .= "E-Mail-Adresse: " . $_SESSION['email'] . "\n";
+$inhalt .= "Telefonnummer: " . $_SESSION['telefon'] . "\n";
+$inhalt .= "Datum: " . $_SESSION['datum'] . "\n";
+$inhalt .= "IP-Adresse: " . $_SESSION['ip'] . "\n";
+$inhalt .= "Session-ID: " . $_SESSION['session_id'] . "\n";
+$inhalt .= "Speicherungsdatum: " . $_SESSION['speicherungsdatum'] . "\n";
+
+// TXT-Datei speichern
+file_put_contents($dateiname, $inhalt);
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/textstyle.css">
+    <title>Bestätigung</title>
+</head>
+<body>
+    <?php include 'footer-header/header.php'; ?>
+
+    <h3>Vielen Dank für Ihre Eingabe! Ihre Daten:</h3>
+    <p><strong>Name:</strong> <?php echo $_SESSION['name']; ?></p>
+    <p><strong>Vorname:</strong> <?php echo $_SESSION['vorname']; ?></p>
+    <p><strong>E-Mail-Adresse:</strong> <?php echo $_SESSION['email']; ?></p>
+    <p><strong>Telefonnummer:</strong> <?php echo $_SESSION['telefon']; ?></p>
+    <p><strong>Datum:</strong> <?php echo $_SESSION['datum']; ?></p>
+    
+    <?php include 'footer-header/footer.php'; ?>
+</body>
+</html>
