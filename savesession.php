@@ -47,6 +47,11 @@ file_put_contents($dateiname, $inhalt);
     <p><strong>Telefonnummer:</strong> <?php echo $_SESSION['telefon']; ?></p>
     <p><strong>Datum:</strong> <?php echo $_SESSION['datum']; ?></p>
     
-    <?php include 'footer-header/footer.php'; ?>
+    <?php include 'footer-header/footer.php'; 
+
+//$_SESSION[''] = $_post['']             //ausgabe in error log in console in browser
+//print_r($_SESSION);session_start();      //ausgabe in error log in console in browser
+?>
+
 </body>
 </html>
