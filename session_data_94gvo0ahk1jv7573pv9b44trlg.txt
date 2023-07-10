@@ -1,8 +1,8 @@
-Name: 
-Vorname: 
-E-Mail-Adresse: 
-Telefonnummer: 
-Datum: 
+Name: Gabriel Peter Ruoss
+Vorname: Ruoss
+E-Mail-Adresse: awdawd@gmail.com
+Telefonnummer: 2056262626
+Datum: 2023-07-18
 IP-Adresse: 127.0.0.1
 Session-ID: 94gvo0ahk1jv7573pv9b44trlg
-Speicherungsdatum: 2023-07-10 08:04:49
+Speicherungsdatum: 2023-07-10 09:19:25

@@ -1,0 +1,22 @@
+body {
+  background: #111; /* Hintergrundfarbe des Body-Elements */
+  perspective: 400px; /* Perspektive für 3D-Transformationen */
+  overflow: hidden; /* Verhindert das Scrollen des Inhalts über den sichtbaren Bereich hinaus */
+}
+
+p {
+  font-family: sans-serif; /* Schriftart */
+  font-size: 30px; /* Schriftgröße */
+  color: #fcd000; /* Textfarbe */
+  font-weight: bold; /* Fettdruck */
+  width: 600px; /* Breite des Absatzes */
+  margin: 0 auto; /* Zentriert den Absatz horizontal */
+  transform: rotateX(30deg); /* Dreht den Absatz um 30 Grad entlang der X-Achse */
+  animation: animateCrawl 20s ease-in; /* Anwendung der Animation "animateCrawl" für 20 Sekunden mit einer einleitenden Verzögerung */
+  animation-fill-mode: forwards; /* Hält die Elemente in der letzten Position der Animation */
+}
+
+@keyframes animateCrawl {
+  0%   { transform: rotateX(30deg) translateY(400px); opacity: 0; } /* Ausgangsposition der Animation: 30 Grad Rotation entlang der X-Achse und 400px nach unten versetzt, mit 0% Sichtbarkeit (unsichtbar) */
+  100% { transform: rotateX(30deg) translateY(100px); opacity: 1; } /* Endposition der Animation: 30 Grad Rotation entlang der X-Achse und 100px nach unten versetzt, mit 100% Sichtbarkeit (sichtbar) */
+}

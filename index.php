@@ -17,6 +17,7 @@
 <?php
 session_set_cookie_params(10800); //sek. also wenn nach 30 sek ein refresh gemacht wird geht der benutzer counter hoch
 session_start();
+
 ?>
 
 <?php include 'footer-header/header.php';?>
