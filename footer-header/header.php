@@ -12,7 +12,6 @@
                 <li><a href="index.php">Startseite</a></li>
                 <li><a href="form.php">Form</a></li>
                 <li><a href="fibo.php">Fibonacci</a></li>
-                <li><a href="ipgrabber.php">IP API</a></li>
                 <li><a href="geoscript.html">IP JS</a></li>
             </ul>
         </nav>

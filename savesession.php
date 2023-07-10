@@ -7,11 +7,12 @@ $_SESSION['vorname'] = $_POST['vorname'];
 $_SESSION['email'] = $_POST['email'];
 $_SESSION['telefon'] = $_POST['telefon'];
 $_SESSION['datum'] = $_POST['datum'];
+//print_r($_SESSION); //ausgabe in error log in console in browser
 
-// Setzen der fehlenden Werte
-$_SESSION['ip'] = $_SERVER['REMOTE_ADDR']; // IP-Adresse des Clients
-$_SESSION['session_id'] = session_id(); // Eindeutige Session-ID
-$_SESSION['speicherungsdatum'] = date('Y-m-d H:i:s'); // Aktuelles Datum und Uhrzeit
+// Setzen der zusätzlichen Werte die für den User unsichtbar sein sollten
+$_SESSION['ip'] = $_SERVER['REMOTE_ADDR']; // IP-Adresse des Users
+$_SESSION['session_id'] = session_id(); // Session-ID
+$_SESSION['speicherungsdatum'] = date('Y-m-d H:i:s'); // Aktuelles Datum und Uhrzeit // Uhrzeit nicht aktuell geht 2h nach
 
 // TXT-Dateiname erstellen
 $dateiname = 'session_data_' . $_SESSION['session_id'] . '.txt';
@@ -25,6 +26,7 @@ $inhalt .= "Datum: " . $_SESSION['datum'] . "\n";
 $inhalt .= "IP-Adresse: " . $_SESSION['ip'] . "\n";
 $inhalt .= "Session-ID: " . $_SESSION['session_id'] . "\n";
 $inhalt .= "Speicherungsdatum: " . $_SESSION['speicherungsdatum'] . "\n";
+
 
 // TXT-Datei speichern
 file_put_contents($dateiname, $inhalt);
@@ -46,11 +48,11 @@ file_put_contents($dateiname, $inhalt);
     <p><strong>E-Mail-Adresse:</strong> <?php echo $_SESSION['email']; ?></p>
     <p><strong>Telefonnummer:</strong> <?php echo $_SESSION['telefon']; ?></p>
     <p><strong>Datum:</strong> <?php echo $_SESSION['datum']; ?></p>
+  
     
     <?php include 'footer-header/footer.php'; 
 
-//$_SESSION[''] = $_post['']             //ausgabe in error log in console in browser
-//print_r($_SESSION);session_start();      //ausgabe in error log in console in browser
+
 ?>
 
 </body>
