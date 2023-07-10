@@ -158,7 +158,7 @@ function randomRange(minVal, maxVal) {
   return Math.floor(Math.random() * (maxVal - minVal - 1)) + minVal;
 }
 </script>
-<?php include 'footer-header/header.php';?>
+<?php include 'footer-header/starwarsheader.php';?>
 
 
     <h3>Vielen Dank für Ihre Eingabe! Ihre Daten:</h3>

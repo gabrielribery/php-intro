@@ -22,12 +22,20 @@ $_SESSION['telefon'] = $_POST['telefon'];
 $_SESSION['datum'] = $_POST['datum'];
 //print_r($_SESSION); //ausgabe in error log in console in browser
 
-// Setzen der zusätzlichen Werte die für den User unsichtbar sein sollten!?
+/* if(isset($_POST['nummer'])){
+    if(isset($_SESSION[nummer])){
+        $_SESSION['nummer'] = $_SESSION['nummer'] + $_POST['nummer'];
+    }else{
+        $_SESSION['nummer'] = $_POST['nummer'];
+    }
+}*/ //simpler kalkulator-> Aktuelle nummer im cache + neue nummer = neue nummer im cache
+
+// setzen der zusätzlichen werte die für den user unsichtbar sein müssen da er nicht sehen soll das ich seine ip grabbe
 $_SESSION['ip'] = $_SERVER['REMOTE_ADDR']; // IP-Adresse des Users
 $_SESSION['session_id'] = session_id(); // Session-ID
 $_SESSION['speicherungsdatum'] = date('Y-m-d H:i:s'); // Aktuelles Datum und Uhrzeit // Uhrzeit nicht aktuell geht 2h nach
 
-// TXT-Dateiname erstellen
+// TXT-Dateiname erstellen aktuell mit Session ID evtl besser mit IP?
 $dateiname = 'session_data_' . $_SESSION['session_id'] . '.txt';
 
 // Inhalt der TXT-Datei erstellen
